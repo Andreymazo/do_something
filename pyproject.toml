@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "do-something-project"
+version = "0.1.0"
+description = ""
+authors = ["Andreymazo <andreymazo@mail.ru>"]
+readme = "README.md"
+packages = [{include = "do_something_project"}]
+
+[tool.poetry.scripts]
+do_something = 'do_something_project.welcome:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
